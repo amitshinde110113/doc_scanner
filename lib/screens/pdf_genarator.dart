@@ -72,6 +72,8 @@ File croppedFile = await ImageCropper.cropImage(
     //   allowedExtensions: ['jpg', 'pdf', 'doc'],
     // );
     File file = File(url);
+    print(file.path);
+
     print(croppedFile.path);
     _createPDF([croppedFile.path]);
   }
